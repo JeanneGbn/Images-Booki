@@ -22,7 +22,6 @@ header {
     font-weight: 500;
     font-size: 16px;
     font-style: normal;
-    color: black;
     margin-top: 40px;
 }
 
@@ -91,6 +90,7 @@ input {
     height: 44px;
     width: 220px;
     font-weight: bold;
+    text-indent: 20px;
 }
 
 .button2 {
@@ -101,6 +101,9 @@ input {
     border-color: #0065FC;
     border-style: solid;
     height: 49px;
+}
+.loupe {
+    display: none;
 }
 
 /* Partie Filtres */
@@ -213,7 +216,7 @@ h2 {
     height: 190px;
     border-radius: 20px;
     text-decoration: none;
-    box-shadow: 8px 8px 12px #F2F2F2;
+    box-shadow: 5px 5px 5px #d9d9d9;
 }
 
 
@@ -235,7 +238,7 @@ h2 {
     height: 190px;
     border-radius: 20px;
     text-decoration: none;
-    box-shadow: 6px 6px 6px grey;
+    box-shadow: 5px 5px 5px #d9d9d9;
 }
 
 
@@ -276,7 +279,7 @@ h3 {
 .grey-star {
     font-size: 12px;
     padding-left: 0px;
-    color: #F2F2F2;
+    color: #d9d9d9;
 }
 
 
@@ -328,6 +331,7 @@ h3 {
     text-decoration: none;
     width: 350px;
     height: 144px;
+    box-shadow: 5px 5px 5px #d9d9d9;
 }
 
 .tableau2 p{
@@ -344,7 +348,7 @@ h3 {
 .tableau2 h3{
     margin-left: 15px;
     margin-right: 22px;
-    text-indent: none;
+    text-indent: 0;
 }
 
 .stars2 {
@@ -383,7 +387,7 @@ h3 {
     width: 302px;
     height: 444px;
     border-radius: 20px;
-    box-shadow: 8px 8px 12px #F2F2F2;
+    box-shadow: 5px 5px 5px #d9d9d9;
 }
 
 b {
@@ -441,7 +445,7 @@ li {
 
 /* Media Queries Tablettes */ 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     nav {
         margin-left: 350px;
         display: flex;
@@ -466,11 +470,12 @@ li {
     }
 
     .colonne1 a{
-        width: 246px;
+        width: 30%;
         height: 199px;
+        justify-content: space-between;
     }
     .colonne2 a{
-        width:246px;
+        width:30%;
         height: 199px;
     }
     .tableau2 {
@@ -518,7 +523,7 @@ li {
     .conteneur3 {
         width: 870px;
     }
-    .conteneur3 .filtre {
+    .filtre button {
         font-size: 15px;
     }
     .titre i{
@@ -532,110 +537,305 @@ li {
 /* Media Queries Smartphones */ 
 
 @media screen and (max-width: 768px) {
-
+    body {
+        max-width: 768px;
+    }
     header{
         display: flex;
         flex-direction: column;
+        height: 300px;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .logo{
-        margin-left: 250px;
+        text-align: center;
     }
-    .navigation{
-        width: 100%;
-        border-bottom: solid;
-        border-color: #F2F2F2;
-    text-align: justify;
-    }
-    nav {
-        display: flex;
-        flex-direction: row;
-        margin-left: 100px;
-    }
-    nav a{
-        color: black;
-        width: 187px;
-    }
-    nav a:hover {
-        border-color: #0065FC;
 
+    .logo img{
+        width: 170px;
+        margin-top: 40px;
     }
-    .conteneur2{
-       font-size: auto;
+     .navigation {
+        font-size: 35px;
+        font-weight: 400;
+        margin-top: 40px; 
+        margin-left: 0px;
+        margin-right: 0px;
+        border-bottom: solid #d9d9d9;
+        border-width: 6px;
+        width: 100%;
+       }
+       .nav-1{
+        margin-right: 90px;
+       }
+       .nav-2{
+        margin-left: 90px;
+       }
+       .navigation .nav-1:hover{
+        border-color: #0065FC;
+        color: #0065FC;
+        border-top: none;
+       }
+       .navigation .nav-2:hover{
+        border-color: #0065FC;
+        color: #0065FC;
+        border-top: none;
+       }
+       .conteneur2{
+        width: 100%;
+       }
+
+    h1{
+        font-size: 55px;
+        font-weight: bold;
+        margin-right: 0px;
+        width: fit-content (90%);
     }
-    .filtre {
-        width: 375px;
+    .conteneur2 p{
+        font-size: 30px;
+    }
+    .recherche{
+        width: 100%;
         display: flex;
-        flex-wrap: wrap;
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+    .button1 {
+        height: 114px;
+        width: 20%;
+        border-radius: 25px 0px 0px 25px;
+        font-size: 30px;
+    }
+    input{
+        height: 110px;
+        width: 100%;
+        font-size: 45px;
+        text-indent: 20px;
+        
+    }
+    .loupe {
+        display: flex;
+        height: 114px;
+        width: 20%;
+        border-radius: 0px 25px 25px 0px;
+        font-size: 30px;
+        background-color: #0065FC;
+        color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    .button2{
+        display: none;
     }
     .conteneur3{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteneur3 h2{
+        font-size: 40px;
+    }
+    .filtre{
+        width: 100%;
         flex-wrap: wrap;
     }
-    
-    .conteneur4{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .tableau2{
-        width: 766px;
-        height: 580px;
-        align-items: center;
-        margin-bottom: 60px;
-        border-radius: 0;
-    }
-    .tableau2 a{
-        width: 700px;
-    }
-    .tableau1{
-        width: 766px;
-        height: auto;
-        background-color: white;
-        border-style: none;
-    }
-    .titre h1{
-        font-size: 22px;
-        margin-left: 30px;
-    }
-    .colonne1{
-        flex-direction: column;
-        padding: 10px;
-        align-items: center;
-    }
-    .colonne2{
-        flex-direction: column;
-        padding: 10px;
-        align-items: center;
-    }
-    .colonne1 a{
-        width: 90%;
-        height: 400px;
+    .filtre button{
+        font-size: 25px;
+        font-weight: 700;
+        padding: 30px;
+        width: 350px;
+        height: 100px;
         margin-top: 20px;
+        border-width: 5px;
+        border-color: #d9d9d9;
+        border-radius: 55px;
     }
-    .colonne2 a{
-        width: 90%;
-        height: 400px;
-        margin-bottom: 20px;
-    }
-    .conteneur5{
-        width: 766px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .article2 h1{
+    .filtre i{
         font-size: 40px;
-        margin-left: 30px;
     }
-    .activites{
-        width: 90%;
-        margin-bottom: 20px;
+    .info{
+        font-size: 30px;
     }
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 766px;
+    .info i{
+        font-size: 25px;
+        font-weight: bold;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-color: #d9d9d9;
     }
     
-
+   .conteneur4{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+   }
+   .tableau2-a {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   }
+   .tableau2{
+    height: 1400px;
+    border-radius: 0px 0px 0px 0px;
+   }
+   .tableau2 h1{
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    width: 300px;
+    white-space: nowrap;
+   }
+   .titre i{
+    padding-left: 0px;
+    padding-right: 30px;
+    font-size: 40px;
+   }
+   
+   
+   .tableau2 a{
+    width: 93%;
+    height: 29%;
+    padding-top: 8px;
+   }
+   .tableau2-a img{
+    width: 40%;
+    height: 100%;
+   }
+  h3{
+    font-size: 40px;
+  }
+  p {
+    font-size: 35px;
+    margin-top: 15px;
+  }
+.stars2{
+    margin-top: 130px;
+    margin-left: 30px;
+}
+.stars2 i{
+    font-size: 28px;
+    padding-right: 10px;
+}
+   .tableau1{
+    background-color: white;
+    border-color: white;
+    height: 2700px;
+   }
+   .tableau1 h1{
+    margin-top: 30px;
+    margin-left: 0px;
+    font-size: 40px;
+   }
+   .colonne1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height:1200px;
+   }
+   .colonne1 a{
+    width: 89%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+   }
+   .colonne1 h3{
+    font-size: 30px;
+   }
+   .colonne1 p{
+    font-size: 27px;
+   }
+   .colonne2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 1200px;
+   }
+   .colonne2 a{
+    width: 89%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+   }
+   .colonne2 h3{
+    font-size: 30px;
+   }
+   .colonne2 p{
+    font-size: 27px;
+   }
+   .stars{
+    margin-top: 20px;
+   }
+   .stars i {
+    font-size: 26px;
+    padding-left: 5px;
+   }
+   .afficher{
+    display: none;
+   }
+   .conteneur5{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
+    height: 2200px;
+   }
+   .article2 h1{
+    margin-left: 20px;
+    width: 50%;
+   }
+   .activites{
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+    height: 500px;
+    margin-bottom: 10px;
+   }
+   .activites img{
+    height: 70%;
+   }
+   h4{
+    font-size: 38px;
+    margin-left: 30px;
+   }
+   footer {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    justify-content: flex-start;
+    margin-left: 0px;
+   }
+   
+   .titre1{
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 0px;
+   }
+   .titre2{
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 0px;
+   }
+   .titre3{
+    font-size: 45px;
+    font-weight: 700;
+    padding-bottom: 0px;
+   }
+   li{
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 0px;
+   }
 
 }
