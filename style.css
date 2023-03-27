@@ -1,6 +1,7 @@
 body {
     max-width: 1400px;
     font-family: raleway;
+    width: 100%;
 }
 
 .wrapper {
@@ -25,12 +26,19 @@ header {
     margin-top: 40px;
 }
 
-.navigation a {
+.nav-1{
     text-decoration: none;
-    justify-content: space-between;
-   padding-left: 50px;
-   padding-right: 50px;
-   padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 30px;
+    color: black;
+}
+.nav-2{
+    text-decoration: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    color: black;
 }
 
 .navigation a:hover {
@@ -51,6 +59,7 @@ header {
     margin-right: 30px;
     margin-top: 50px;
     margin-left: 5px;
+    width: 100%;
 
 }
 
@@ -80,6 +89,10 @@ p{
     border-color: #F2F2F2;
     border-style: solid;
     height: 49px;
+}
+.button1 i{
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 input {
@@ -113,13 +126,14 @@ input {
     flex-direction: row;
     margin-top: 30px;
     margin-left: 12px;
+    width: 100%;
 }
 
 
 
 h2 {
     font-size: 18px;
-    font-weight: 700px;
+    font-weight: 700;
 }
 .filtre {
     display: flex;
@@ -172,6 +186,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 /* Section 1 */
@@ -181,7 +196,7 @@ h2 {
     border-color: #F2F2F2;
     background-color: #F2F2F2;
     width: 63%;
-    height: 640px;
+    height: 600px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -193,6 +208,7 @@ h2 {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+    height: 20px;
 }
 
 
@@ -212,7 +228,7 @@ h2 {
     color: black;
     display: flex;
     flex-direction: column;
-    width: 230px;
+    width: 30%;
     height: 190px;
     border-radius: 20px;
     text-decoration: none;
@@ -234,7 +250,7 @@ h2 {
     border-color: white;
     background-color: white;
     color: black;
-    width: 230px;
+    width: 30%;
     height: 190px;
     border-radius: 20px;
     text-decoration: none;
@@ -249,17 +265,14 @@ a img{
 }
 
 
-h3 {
+.tableau1 h3 {
     font-size: 16px;
     margin-top: 8px;
     margin-bottom: 0px;
+    margin-left: 8px;
 }
 
-.colonne1 p{
-    margin-left: 10px;
-    margin-top: 5px;
-}
-.colonne2 p{
+.tableau1 p{
     margin-left: 10px;
     margin-top: 5px;
 }
@@ -271,20 +284,20 @@ h3 {
     margin-top: 5px;
 }
 
-.stars i{
+.blue-star{
     font-size: 12px;
     padding-left: 0px;
     color: #0065FC;
 }
 .grey-star {
     font-size: 12px;
-    padding-left: 0px;
+    padding-left: 3px;
     color: #d9d9d9;
 }
 
 
 .afficher {
-    font-size: 21;
+    font-size: 21px;
     font-weight: bold;
     margin-bottom: 35px;
     margin-left: 40px;
@@ -303,11 +316,11 @@ h3 {
     flex-direction: column;
     justify-content: space-around;
     width: 32%;
-    height: 640px;
+    height: 600px;
 }
 
 .titre i{
-    margin-top: 35px;
+    margin-top: 20px;
     padding-left: 118px;
     font-size: 20px;
     color: #0065FC;
@@ -329,13 +342,14 @@ h3 {
     margin-bottom: 20px; 
     margin-top: 20px;
     text-decoration: none;
-    width: 350px;
+    width: 85%;
     height: 144px;
     box-shadow: 5px 5px 5px #d9d9d9;
 }
 
 .tableau2 p{
     margin-left:15px;
+    margin-top: 8px;
 }
 
 .tableau2 img {
@@ -348,7 +362,7 @@ h3 {
 .tableau2 h3{
     margin-left: 15px;
     margin-right: 22px;
-    text-indent: 0;
+    margin-top: 8px;
 }
 
 .stars2 {
@@ -357,10 +371,7 @@ h3 {
     margin-left: 10px;
     margin-top: 40px;
 }
-.stars2 i{
-    color: #0065FC;
-    font-size: 12px;
-}
+
 
 
 
@@ -372,7 +383,6 @@ h3 {
 
 .article2 {
     margin-top: 60px;
-    text-indent: none;
 }
 
 
@@ -380,18 +390,16 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 18,47px;
+    margin-top: 18px;
+    width: 100%;
 }
 
 .activites {
-    width: 302px;
+    width: 22%;
     height: 444px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #d9d9d9;
-}
-
-b {
-    margin-left: 10px;
+    text-decoration: none;
 }
 
 .activites img {
@@ -399,6 +407,10 @@ b {
     width: 100%;
     height: 85%;
     border-radius: 20px 20px 0px 0px;
+}
+h4{
+    margin-left: 12px;
+    color: black;
 }
 
 main {
@@ -410,6 +422,7 @@ main {
 footer {
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-around;
     background-color: #F2F2F2;
 }
@@ -447,7 +460,7 @@ li {
 
 @media screen and (max-width: 992px) {
     nav {
-        margin-left: 350px;
+        margin-left: 55%;
         display: flex;
         flex-direction: row;
     }
@@ -458,44 +471,50 @@ li {
         flex-direction: column;
     }
     .tableau1 {
-        width: 870px;
+        width: 100%;
         height: 626px;
         
     }
     .tableau1 h1{
     margin-top: 10px;
     }
-    .titre h1{
-        margin-bottom: 0px;
-    }
 
     .colonne1 a{
         width: 30%;
         height: 199px;
-        justify-content: space-between;
     }
     .colonne2 a{
         width:30%;
         height: 199px;
     }
+    h3{
+        margin-top: 4px;
+    }
     .tableau2 {
         display: flex;
         flex-direction: column;
-        width: 870px;
+        width: 100%;
         height: 278px;
         margin-top: 50px;
         justify-content: flex-start;  
     }
     .tableau2-a {
-        margin-top: 0px;
+        margin-top: 3%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-right: 40px;
     }
     .tableau2 a{
-        width: 250px;
+        width: 30%;
         height: 144px;
+    }
+    .tableau2 h3{
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .tableau2 p{
+        font-size: 14px;
     }
 
     .tableau2 .titre{
@@ -505,10 +524,10 @@ li {
         margin-top: 70px;
     }
     .conteneur5 {
-        width: 870px;
+        width: 100%;
     }
     .activites {
-        width: 190px;
+        width: 22%;
         height: 270px;
         text-align: start;
     }
@@ -516,12 +535,12 @@ li {
         height: 200px;
     }
     footer {
-        width: 870px;
+        width: 100%;
         height: 220px;
         justify-content: space-between;
     }
     .conteneur3 {
-        width: 870px;
+        width: 100%;
     }
     .filtre button {
         font-size: 15px;
@@ -529,15 +548,13 @@ li {
     .titre i{
         margin-left: 450px;
     }
-    b {
-        margin-top: 0px;
-    }
 }
 
 /* Media Queries Smartphones */ 
 
 @media screen and (max-width: 768px) {
     body {
+        width: 100%;
         max-width: 768px;
     }
     header{
@@ -545,6 +562,10 @@ li {
         flex-direction: column;
         height: 300px;
         width: 100%;
+    }
+    .wrapper{
+        width: 100%;
+        max-width: 768px;
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -553,24 +574,33 @@ li {
     }
 
     .logo img{
-        width: 170px;
+        width: 120px;
         margin-top: 40px;
     }
-     .navigation {
-        font-size: 35px;
-        font-weight: 400;
-        margin-top: 40px; 
+    nav{
         margin-left: 0px;
         margin-right: 0px;
-        border-bottom: solid #d9d9d9;
-        border-width: 6px;
         width: 100%;
+    }
+     .navigation {
+        font-size: 40px;
+        margin-top: 40px;
        }
-       .nav-1{
-        margin-right: 90px;
+       .nav-1 {
+        color: black;
+        padding-right: 12%;
+        padding-left: 10%;
+        border-bottom: solid #F2F2F2;
+        border-width: 6px;
+        padding-bottom: 15px;
        }
-       .nav-2{
-        margin-left: 90px;
+       .nav-2 {
+        color: black;
+        padding-left: 12%;
+        padding-right: 12%;
+        border-bottom: solid #F2F2F2;
+        border-width: 6px;
+        padding-bottom: 15px;
        }
        .navigation .nav-1:hover{
         border-color: #0065FC;
@@ -589,35 +619,36 @@ li {
     h1{
         font-size: 55px;
         font-weight: bold;
-        margin-right: 0px;
-        width: fit-content (90%);
+        margin-left: 5%;
     }
     .conteneur2 p{
-        font-size: 30px;
+        font-size: 35px;
+        margin-left: 5%;
+        margin-top: 5px;
     }
     .recherche{
         width: 100%;
-        display: flex;
-        margin-left: 70px;
         margin-top: 50px;
     }
     .button1 {
         height: 114px;
-        width: 20%;
+        width: 13%;
         border-radius: 25px 0px 0px 25px;
         font-size: 30px;
+        margin-left: 20px;
     }
     input{
         height: 110px;
-        width: 100%;
-        font-size: 45px;
+        font-size: 38px;
         text-indent: 20px;
+        width: 60%;
         
     }
     .loupe {
         display: flex;
         height: 114px;
-        width: 20%;
+        width: 13%;
+        margin-right: 10px;
         border-radius: 0px 25px 25px 0px;
         font-size: 30px;
         background-color: #0065FC;
@@ -631,20 +662,25 @@ li {
     .conteneur3{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
     }
     .conteneur3 h2{
         font-size: 40px;
+        margin-left: 20px;
+        width: 100%;
     }
     .filtre{
         width: 100%;
         flex-wrap: wrap;
+        margin-right: 0px;
     }
     .filtre button{
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 700;
         padding: 30px;
-        width: 350px;
         height: 100px;
+        width: 44%;
         margin-top: 20px;
         border-width: 5px;
         border-color: #d9d9d9;
@@ -654,16 +690,17 @@ li {
         font-size: 40px;
     }
     .info{
-        font-size: 30px;
+        font-size: 35px;
     }
     .info i{
-        font-size: 25px;
+        font-size: 30px;
         font-weight: bold;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
         border-color: #d9d9d9;
+        margin-right: 20px;
     }
     
    .conteneur4{
@@ -672,7 +709,6 @@ li {
     width: 100%;
    }
    .tableau2-a {
-    width: 100%;
     height: 1200px;
     display: flex;
     flex-direction: column;
@@ -682,18 +718,20 @@ li {
     height: 1400px;
     border-radius: 0px 0px 0px 0px;
    }
+   .titre{
+    width: 100%;
+    height: 5%;
+   }
    .tableau2 h1{
-    margin-right: 0px;
+    font-size: 45px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 15px;
-    width: 300px;
     white-space: nowrap;
    }
    .titre i{
-    padding-left: 0px;
-    padding-right: 30px;
     font-size: 40px;
+    margin-left: 14%;
    }
    
    
@@ -706,15 +744,15 @@ li {
     width: 40%;
     height: 100%;
    }
-  h3{
+  .tableau2 h3{
     font-size: 40px;
   }
-  p {
+  .tableau2 p {
     font-size: 35px;
     margin-top: 15px;
   }
 .stars2{
-    margin-top: 130px;
+    margin-top: 35%;
     margin-left: 30px;
 }
 .stars2 i{
@@ -724,18 +762,17 @@ li {
    .tableau1{
     background-color: white;
     border-color: white;
-    height: 2700px;
+    height: 2650px;
    }
    .tableau1 h1{
     margin-top: 30px;
     margin-left: 0px;
-    font-size: 40px;
+    font-size: 50px;
    }
    .colonne1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
     height:1200px;
@@ -756,7 +793,6 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 30px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -790,6 +826,7 @@ li {
     align-items: start;
     margin-left: 20px;
     height: 2200px;
+    width: 100%;
    }
    .article2 h1{
     margin-left: 20px;
@@ -815,6 +852,7 @@ li {
     height: 1000px;
     justify-content: flex-start;
     margin-left: 0px;
+    width: 100%;
    }
    
    .titre1{
