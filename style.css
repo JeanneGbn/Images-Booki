@@ -1,7 +1,6 @@
 body {
     max-width: 1400px;
-    font-family: raleway;
-    width: 100%;
+    font-family: "raleway", sans-serif;
 }
 .wrapper{
     padding-left: 3%;
@@ -14,7 +13,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
 }
 
 .navigation {
@@ -173,8 +171,10 @@ h2 {
     border-color: #F2F2F2;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: #0065FC;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /* Hébergements - Article 1 */
@@ -483,6 +483,12 @@ li {
     .navigation a{
         color: black;
     }
+    h1{
+        font-size: 24px;
+    }
+    .conteneur2 p{
+        font-size: 18px;
+    }
     .conteneur3 {
         width: 100%;
     }
@@ -569,10 +575,6 @@ li {
 /* Media Queries Smartphones */ 
 
 @media screen and (max-width: 768px) {
-    body {
-        width: 100%;
-        max-width: 768px;
-    }
     header{
         display: flex;
         flex-direction: column;
@@ -637,7 +639,7 @@ li {
         margin-left: 5%;
     }
     .conteneur2 p{
-        font-size: 35px;
+        font-size: 37px;
         margin-left: 5%;
         margin-top: 5px;
     }
